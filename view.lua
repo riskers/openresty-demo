@@ -8,7 +8,7 @@ ngx.ctx.cookies = req.get_cookie_from_headers(ngx.req.get_headers())
 
 local httpc = http.new()
 local res, err = httpc:request_uri(
-  "http://st.mione.mi.srv",
+  "http://xxx.com", -- get user info api
   {
     path = "/api/server/info",
     method = "GET",
